@@ -1,0 +1,142 @@
+/* RESET PADRÃO PROFISSIONAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE: Foco na legibilidade e no contraste */
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #0d1117; /* Fundo escuro (GitHub-like) */
+    color: #c9d1d9; /* Texto claro */
+    line-height: 1.6;
+    text-align: center; 
+}
+
+/* Containers para limites de largura */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* --- SEÇÕES --- */
+section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #30363d; /* Linha divisória sutil, muito profissional */
+}
+
+section h3 {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    padding: 100px 20px;
+    background-color: #161b22; 
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.hero h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #8b949e;
+}
+
+/* --- BOTÃO CTA (Call to Action) --- */
+.cta-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #007acc; /* Azul padrão de código/link */
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Roboto Mono', monospace;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #005f99;
+}
+
+/* --- FEATURE GRID --- */
+.feature-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap; 
+}
+
+.feature-item {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+    border-left: 2px solid #007acc; /* Detalhe preciso */
+    padding-left: 15px;
+}
+
+.feature-item h4 {
+    color: #007acc;
+    margin-bottom: 5px;
+}
+
+.feature-item h4::before {
+    content: "🚀 "; 
+    margin-right: 5px;
+}
+
+/* --- FORMULÁRIO DE CONTATO --- */
+#contact form {
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    text-align: left;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #21262d; 
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#contact input:focus, #contact textarea:focus, #contact button:focus {
+    outline: none;
+    border: 1px solid #00aaff;
+    box-shadow: 0 0 5px rgba(0, 170, 255, 0.5); 
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+.contact-info {
+    font-size: 0.9em;
+    color: #8b949e;
+}
+
+/* --- RODAPÉ --- */
+footer {
+    padding: 20px;
+    background-color: #161b22;
+    border-top: 1px solid #30363d;
+}
+
+footer p {
+    font-size: 0.8em;
+    color: #8b949e;
+}
